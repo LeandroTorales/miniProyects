@@ -1,0 +1,19 @@
+@media (max-width:768px) {
+    body {
+        flex-direction: column;
+        padding: 25px 0px;
+        height: 175vh;
+    }
+
+    .div--backgroundImage {
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        height: 0;
+        padding: 50px 0px;
+    }
+
+    .textImage {
+        padding: 0px;
+    }
+}

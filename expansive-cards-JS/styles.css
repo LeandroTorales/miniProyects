@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 1.3vw;
+    padding: 0px 40px;
+}
+
+.div--backgroundImage {
+    background-image: url(https://www.xtrafondos.com/wallpapers/resized/paisaje-digital-en-atardecer-5846.jpg?s=large);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80%;
+    border-radius: 1vw;
+    -webkit-border-radius: 1vw;
+    -moz-border-radius: 1vw;
+    -ms-border-radius: 1vw;
+    -o-border-radius: 1vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    background-size: cover;
+    color: white;
+    flex: 0.1;
+    transition: all 1.5s;
+    -webkit-transition: all 1.5s;
+    -moz-transition: all 1.5s;
+    -ms-transition: all 1.5s;
+    -o-transition: all 1.5s;
+    cursor: pointer;
+    user-select: none;
+}
+
+.div--backgroundImage.active {
+    flex: 5;
+}
+
+.textImage {
+    font-style: italic;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+}

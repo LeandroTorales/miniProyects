@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  gap: 50px;
+  flex-direction: column;
+}
+
+.progress-steps__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  background-color: rgba(128, 128, 128, 0.202);
+}
+
+.lineSteps {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+  height: 3px;
+  width: 0%;
+  background-color: #60bddd;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.step {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 20px solid #a1a1a1;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.step.active {
+  border-color: #60bddd;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+button {
+  padding: 5px 20px;
+  font-size: 1.3rem;
+  font: bold;
+  background-color: #60bddd;
+  border: 1px solid grey;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+}
+
+button:disabled {
+  background-color: rgb(210, 210, 210);
+  cursor: not-allowed;
+}
