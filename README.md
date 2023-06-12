@@ -1,1 +1,1 @@
-# miniProyects
+# Aquí subire mini proyectos simple de HTML, CSS y JS, cada carpeta es un mini proyecto aislado. Originalmente estos proyectos estan sacados del reto famoso de programación denominado "50 proyects, 50 days", pero los ire haciendo a mi ritmo.
