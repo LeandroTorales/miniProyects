@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: aquamarine;
+  align-items: center;
+}
+
+.container {
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  background-color: white;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  transform-origin: top left;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.container.rotateActive {
+  transform: rotate(-20deg);
+  -webkit-transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+}
+
+button {
+  position: relative;
+  bottom: -40px;
+  cursor: pointer;
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+}
+
+.bars--container {
+  padding: 50px;
+  border-radius: 50%;
+  background-color: aqua;
+  height: 200px;
+  width: 200px;
+  position: fixed;
+  left: -100px;
+  top: -100px;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  color: black;
+  align-items: center;
+  z-index: 1;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.bars--container.rotateActive {
+  transform: rotate(-70deg);
+  position: absolute;
+  -webkit-transform: rotate(-70deg);
+  -moz-transform: rotate(-70deg);
+  -ms-transform: rotate(-70deg);
+  -o-transform: rotate(-70deg);
+}
+
+.bars--container.rotateActive button {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+
+section {
+  background-color: white;
+  height: auto;
+  padding: 6rem 3rem;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 1000px;
+}
+
+.title--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.title--container > h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.title--container span {
+  font-size: 14px;
+  color: #7c7c7c;
+  font-style: italic;
+}
+
+section h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+img {
+  max-width: 100%;
+}
+
+nav {
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  z-index: 1;
+}
+
+nav ul {
+  list-style: none;
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+nav ul li {
+  position: relative;
+  left: -250px;
+  transition: all 0.5s;
+  transition-delay: 500ms;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+nav ul li.active {
+  left: 0;
+  transition-delay: 500ms;
+}
+
+nav ul li i {
+  padding-right: 10px;
+}
+
+nav ul li:nth-child(1) {
+  margin-left: 30px;
+}
+nav ul li:nth-child(2) {
+  margin-left: 70px;
+}
+nav ul li:nth-child(3) {
+  margin-left: 130px;
+}
